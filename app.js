@@ -33,7 +33,7 @@ const showImages = (images) => {
     let div = document.createElement('slide-container');
     div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2';
     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">
-    <p class="image-tags">Name: ${image.tags}</p> 
+    <p class="image-tags">Tag: ${image.tags}</p> 
     <p class="image-width">Width: ${image.webformatWidth}</p> 
     <p class="image-height">Height: ${image.webformatHeight}</p> 
     <p class="image-views">Views: ${image.downloads}</p>
